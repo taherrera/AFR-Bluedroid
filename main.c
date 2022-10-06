@@ -13,9 +13,8 @@
 int app_main(void){
 
   nvs_flash_init(); 
-
-
   bluetooth_init("test2");
+  vTaskStartScheduler();
 
   while(1){
     vTaskDelay(100);
